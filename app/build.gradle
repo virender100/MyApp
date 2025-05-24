@@ -1,12 +1,15 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    compileSdkVersion 33
+    namespace 'com.example.myapp'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.myapp"
-        minSdkVersion 21
-        targetSdkVersion 33
+        applicationId "com.example.myapp"
+        minSdk 21
+        targetSdk 33
         versionCode 1
         versionName "1.0"
     }
@@ -21,4 +24,5 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
 }
